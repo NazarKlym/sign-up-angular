@@ -11,14 +11,24 @@
         <div class="card-body">
           <form class="form">
             <div class="form-group">
-              <label  >Email</label>
-              <input [(ngModel)]="signUpUserData.email" name="email" type="text" class="form-control rounded-0" required>
-            </div>
-            <div class="form-group">
+              <label>First name</label>
+              <input [(ngModel)]="usersService.signUpUserData.firstname" name="firstname" type="text"
+                     class="form-control rounded-0" required>
+              <label>Last name</label>
+              <input [(ngModel)]="usersService.signUpUserData.lastname" name="lastname" type="text"
+                     class="form-control rounded-0" required>
+              <label>Email</label>
+              <input [(ngModel)]="usersService.signUpUserData.email" name="email" type="text"
+                     class="form-control rounded-0" required>
+
               <label>Password</label>
-              <input [(ngModel)]="signUpUserData.password" name="password" type="password"  class="form-control rounded-0"  required>
+              <input [(ngModel)]="usersService.signUpUserData.password" name="password" type="password"
+                     class="form-control rounded-0" required>
+              <label>Confirm password</label>
+              <input [(ngModel)]="usersService.signUpUserData.password" name="password" type="password"
+                     class="form-control rounded-0" required>
             </div>
-            <button (click)="signUp()" type="button" class="btn btn-primary float-right">Sign-up</button>
+            <button (click)="usersService.signUp()" type="button" class="btn btn-primary float-right">Sign-up</button>
           </form>
         </div>
 

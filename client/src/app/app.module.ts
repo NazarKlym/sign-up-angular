@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SpecialDashboardComponent } from './special-dashboard/special-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +14,14 @@ import { SpecialDashboardComponent } from './special-dashboard/special-dashboard
     SignUpComponent,
     LoginComponent,
     DashboardComponent,
-    SpecialDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
