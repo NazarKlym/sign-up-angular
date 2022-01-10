@@ -11,23 +11,23 @@
           <form class="form">
             <div class="form-group">
               <label>First name</label>
-              <input [(ngModel)]="usersService.signUpUserData.firstname" name="firstname" type="text"
-                     class="form-control rounded-0" required>
+              <input [(ngModel)]="signUpData.firstname" class="form-control rounded-0" name="firstname"
+                     required type="text">
               <label>Last name</label>
-              <input [(ngModel)]="usersService.signUpUserData.lastname" name="lastname" type="text"
+              <input [(ngModel)]="signUpData.lastname" name="lastname" type="text"
                      class="form-control rounded-0" required>
               <label>Email</label>
-              <input [(ngModel)]="usersService.signUpUserData.email" name="email" type="text"
+              <input [(ngModel)]="signUpData.email" name="email" type="text"
                      class="form-control rounded-0" required>
 
               <label>Password</label>
-              <input [(ngModel)]="usersService.signUpUserData.password" name="password" type="password"
+              <input [(ngModel)]="signUpData.password" name="password" type="password"
                      class="form-control rounded-0" required>
               <label>Confirm password</label>
-              <input [(ngModel)]="usersService.signUpUserData.password" name="password" type="password"
+              <input [(ngModel)]="signUpData.confirm_password" name="password" type="password"
                      class="form-control rounded-0" required>
             </div>
-            <button (click)="usersService.signUp()" type="button" class="btn btn-primary float-right">Sign-up</button>
+            <button (click)="signUp()" type="button" class="btn btn-primary float-right">Sign-up</button>
           </form>
         </div>
 
